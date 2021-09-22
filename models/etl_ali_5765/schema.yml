@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: evaluation
+    description: evaluation_database_overlay
+    database: evaluation
+    schema: etl_ali_5765
+    tables:
+      - name: accounts_receivable
+        columns:
+          - name: date
+          - name: debit
+          - name: credit
+          - name: period
+          - name: account
+      - name: working_capital
+        columns:
+          - name: date
+          - name: daily_balance
+          - name: account
